@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberGuard Academy - Seu Guia Completo de Segurança Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <h1 class="logo">Cyber<span>Guard</span> Academy</h1>
+      <nav>
+        <ul>
+          <li><a href="#modulos">Aulas & Ameaças</a></li>
+          <li><a href="#checklist">Checklist de Proteção</a></li>
+          <li><a href="#simulador">Simulador</a></li>
+          <li><a href="#ferramentas">Gerador de Senhas</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Aprenda a Navegar com Segurança Total</h2>
+      <p>Entenda como os cibercriminosos agem, aprenda a identificar golpes e proteja suas contas, finanças e identidade online.</p>
+      <a href="#modulos" class="btn">Explorar Conteúdo</a>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- Seção de Aulas/Módulos -->
+    <section id="modulos" class="section-block">
+      <h2 class="section-title">Principais Ameaças e Como se Proteger</h2>
+      <p class="section-subtitle">Conheça em detalhes os ataques mais comuns no ambiente digital:</p>
+
+      <div class="topic-grid">
+        <article class="topic-card">
+          <div class="topic-badge">Nível Básico</div>
+          <h3>Phishing e Golpes de Engenharia Social</h3>
+          <p>Phishing é a técnica de enganar pessoas para que compartilhem informações confidenciais, como senhas e números de cartão de crédito.</p>
+          <h4>Como identificar:</h4>
+          <ul>
+            <li>Mensagens com senso de urgência ("Sua conta será bloqueada hoje!").</li>
+            <li>Erros gramaticais ou e-mails de remetentes suspeitos (ex: `suporte@banc0-atendimento.com`).</li>
+            <li>Links curtos ou ocultos direcionando para sites clonados.</li>
+          </ul>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-badge">Nível Intermediário</div>
+          <h3>Malware, Ransomware e Spyware</h3>
+          <p>Softwares maliciosos projetados para infectar seu computador, roubar dados pessoais ou sequestrar seus arquivos mediante resgate.</p>
+          <h4>Como se proteger:</h4>
+          <ul>
+            <li>Mantenha o Sistema Operacional e antivírus sempre atualizados.</li>
+            <li>Nunca baixe programas pirateados, torrents suspeitos ou anexos desconhecidos.</li>
+            <li>Realize backups periódicos em nuvem ou HD externo.</li>
+          </ul>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-badge">Nível Essencial</div>
+          <h3>Autenticação em Dois Fatores (2FA)</h3>
+          <p>O 2FA adiciona uma camada de verificação além da senha. Mesmo que alguém descubra sua senha, não conseguirá acessar sem o segundo código.</p>
+          <h4>Melhores práticas:</h4>
+          <ul>
+            <li>Evite 2FA via SMS (pode ser clonado por SIM Swap).</li>
+            <li>Prefira aplicativos autenticadores como <em>Google Authenticator</em>, <em>Microsoft Authenticator</em> ou <em>Authy</em>.</li>
+            <li>Guarde os códigos de recuperação em um local físico seguro.</li>
+          </ul>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-badge">Nível Prático</div>
+          <h3>Segurança em Wi-Fi Público</h3>
+          <p>Redes Wi-Fi abertas de cafés, aeroportos e shoppings podem ser interceptadas por invasores para capturar seu tráfego de dados.</p>
+          <h4>Recomendações:</h4>
+          <ul>
+            <li>Nunca acesse aplicativos de bancos ou faça compras em redes públicas.</li>
+            <li>Utilize uma VPN confiável para criptografar sua conexão.</li>
+            <li>Desative a conexão automática com redes Wi-Fi conhecidas.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Checklist Interativo -->
+    <section id="checklist" class="section-block">
+      <h2 class="section-title">Checklist de Diagnóstico de Segurança</h2>
+      <p class="section-subtitle">Marque os itens que você já aplica na sua rotina para medir seu nível de proteção:</p>
+
+      <div class="interactive-card">
+        <div class="progress-container">
+          <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <p class="progress-text" id="progress-text">Progresso: 0% protegido</p>
+
+        <div class="checklist-items">
+          <label class="check-item">
+            <input type="checkbox" class="chk-task"> Uso um gerenciador de senhas para guardar credenciais únicas para cada site.
+          </label>
+          <label class="check-item">
+            <input type="checkbox" class="chk-task"> Tenho Autenticação em Dois Fatores (2FA) via App ativada no e-mail principal e WhatsApp.
+          </label>
+          <label class="check-item">
+            <input type="checkbox" class="chk-task"> Atualizo o sistema operacional do meu celular e computador automaticamente.
+          </label>
+          <label class="check-item">
+            <input type="checkbox" class="chk-task"> Nunca clico em links recebidos por SMS ou e-mail sem confirmar o remetente.
+          </label>
+          <label class="check-item">
+            <input type="checkbox" class="chk-task"> Tenho um backup recente dos meus arquivos mais importantes fora do computador.
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simulador de Phishing -->
+    <section id="simulador" class="section-block">
+      <h2 class="section-title">Simulador: Esse e-mail é seguro ou golpe?</h2>
+      <p class="section-subtitle">Analise a mensagem abaixo e decida se deve clicar no link:</p>
+
+      <div class="interactive-card email-simulator">
+        <div class="email-header">
+          <p><strong>De:</strong> suporte-seguranca@banc0-br.com</p>
+          <p><strong>Para:</strong> você@email.com</p>
+          <p><strong>Assunto:</strong> URGENTE: Sua conta será bloqueada em 24h!</p>
+        </div>
+        <div class="email-body">
+          <p>Prezado cliente,</p>
+          <p>Detectamos uma tentativa de acesso não autorizada em sua conta. Para evitar o bloqueio imediato, acesse o link abaixo e recadastre seus dados e senha de acesso.</p>
+          <p><a href="#" id="fake-link" onclick="event.preventDefault()">https://banco-br.com/atualizar-cadastro</a></p>
+        </div>
+        <div class="sim-actions">
+          <button class="btn btn-danger" id="btn-phishing">É Golpe / Phishing</button>
+          <button class="btn btn-success" id="btn-legit">É Legítimo</button>
+        </div>
+        <div id="sim-result" class="sim-result-box"></div>
+      </div>
+    </section>
+
+    <!-- Gerador de Senhas Avançado -->
+    <section id="ferramentas" class="section-block">
+      <h2 class="section-title">Gerador de Senha Segura</h2>
+      <p class="section-subtitle">Crie senhas aleatórias e difíceis de serem quebradas por ataques de força bruta:</p>
+
+      <div class="interactive-card generator-card">
+        <div class="input-display-group">
+          <input type="text" id="password-display" readonly placeholder="Sua senha aparecerá aqui">
+          <button id="copy-btn" class="btn btn-secondary">Copiar</button>
+        </div>
+
+        <div class="controls-group">
+          <div class="control-item">
+            <label for="length-slider">Tamanho da senha: <span id="length-val">16</span> caracteres</label>
+            <input type="range" id="length-slider" min="8" max="32" value="16">
+          </div>
+          <div class="control-item checkboxes">
+            <label><input type="checkbox" id="chk-nums" checked> Incluir Números (123)</label>
+            <label><input type="checkbox" id="chk-syms" checked> Incluir Símbolos (!@#)</label>
+          </div>
+        </div>
+
+        <button id="generate-btn" class="btn btn-full">Gerar Nova Senha</button>
+        <p id="feedback-msg"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 CyberGuard Academy - Projeto Educativo de Conscientização em Segurança Digital.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
